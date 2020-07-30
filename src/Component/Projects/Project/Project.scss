@@ -1,0 +1,101 @@
+
+
+.demo-project .btn{
+    opacity: 0;
+    position: absolute;
+    bottom: 25%;
+    left: 25%;
+    width: 50%;
+    border: 1px solid rgb(49, 102, 218);
+    outline: none;
+    background-color: transparent;
+    color: black;
+    font-size: 1.2em;
+    padding: 5px;
+}
+.demo-project .btn:hover{
+    transition: all  .3s;
+    background-color: rgb(49, 102, 218);
+    color: white;
+}
+
+
+.hov{
+    padding-top: 20px;
+    font-size: 2em;
+    font-weight: 600;
+}
+.demo-project p ,.hov{
+    padding: 0 10px;
+    opacity: 0;
+    
+}
+.demo-project{
+    width: 350px;
+    height: 300px;
+    opacity: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    &:hover{
+        .demo-project .hov,p{
+            animation: textPushDown .3s ease-in;
+            animation-fill-mode: both;
+            color: rgb(211, 88, 228);
+        }
+        .btn{
+            animation: textPushUp .3s ;
+            animation-fill-mode: both;
+        }
+        
+    }
+}
+
+.upAnimation{
+    animation: moveUp .5s ease-in ;
+    animation-fill-mode: both;
+}
+
+
+@keyframes moveUp{
+    0%{
+        opacity: 0;
+        transform: translateY(400px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes textPushDown{
+    0%{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes textPushUp{
+    0%{
+        opacity: 0;
+        transform: translateY(80px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width:500px){
+    .demo-project{
+        width: 80%;
+    }
+    .demo-project:nth-of-type(1){
+        margin-top: 50px;
+    }
+}
