@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import './Nav.scss'
 // import { makeStyles } from '@material-ui/core/styles';
 // import AppBar from '@material-ui/core/AppBar';
@@ -49,6 +49,7 @@ import './Nav.scss'
 
 export default function Navbar(){
 
+  const [scrollEffect,setScrollEffect]= useState(null)
   // setTimeout(()=>{
 
   //   console.log(document.getElementById('check').checked)
@@ -60,9 +61,23 @@ export default function Navbar(){
     }
   }
 
+  // apply nav fade class when scroll
+  window.addEventListener('scroll',()=>{
+    const scrollCheck = window.scrollY >400
+    
+    if(scrollCheck){
+      setScrollEffect('scroll-effect')
+    }else{
+      setScrollEffect(null)
+    }
+    
+   
+    
+  })
+
 
   return(
-    <nav>
+    <nav className={scrollEffect}>
       <input type='checkbox' id='check'/>
       <label for='check' className='checkbtn' >
     <i className='fas fa-bars'></i>

@@ -4,10 +4,10 @@
     clip-path: polygon(51% 50%, 100% 16%, 100% 100%, 0 99%, 0 12%);
     text-align: center;
     color: white;
-    padding-top: 100px;
+    padding-top: 120px;
 }
 .footer h1{
-    padding-top: 100px;
+    padding-top: 150px;
     font-weight: 800;
 }
 .footer p{
@@ -23,4 +23,7 @@
     height: 5px;
     animation: moveRight 1s ;
     animation-fill-mode: both;
+}
+.social-button-container{
+    padding-bottom: 20px;
 }

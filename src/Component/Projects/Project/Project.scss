@@ -39,6 +39,7 @@
     display: flex;
     flex-direction: column;
     padding-top: 20px;
+    background-size: 100% 100%;
     &:hover{
         .demo-project .hov,p{
             animation: textPushDown .3s ease-in;
@@ -94,6 +95,7 @@
 @media (max-width:500px){
     .demo-project{
         width: 80%;
+        background-size: 100% 100%;
     }
     .demo-project:nth-of-type(1){
         margin-top: 50px;

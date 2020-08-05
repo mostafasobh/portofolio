@@ -23,6 +23,7 @@ font-family: 'Open Sans';
   background-size: cover;
     width: 100%;
   min-height: 70vh;
+  padding-top: 50px;
 }
 
 .introText{

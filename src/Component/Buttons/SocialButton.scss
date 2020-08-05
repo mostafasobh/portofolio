@@ -1,0 +1,17 @@
+.social-button{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(15, 6, 6);
+    border: 1px solid rgb(15, 6, 6);
+    color: rgba(243, 224, 53, 0.925);
+    text-align: center;
+    margin: 5px;
+    border-radius: 5px;
+    transition: all .5s;
+    font-size: 18px;
+}
+.social-button:hover{
+    color: rgb(15, 6, 6);
+    background-color: rgba(187, 175, 64, 0.925);
+    border: 1px solid rgba(192, 177, 47, 0.925);
+}
