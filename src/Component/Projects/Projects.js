@@ -7,7 +7,7 @@ export default function Projects() {
     const [scroll,setScroll] = useState([])
   useEffect(()=>{
     window.addEventListener('scroll',()=>{
-      if(window.scrollY > 800){  
+      if(window.scrollY > document.getElementById('projects').offsetTop -190){  
        setScroll([...scroll,'mrnAnimation','mlnAnimation'])
       }
     })
@@ -30,7 +30,7 @@ export default function Projects() {
             link='https://t-player-9002f.web.app/movies'
             />
             <Project
-            tools='React Js / Redux /Redux thunk /tmdb api'
+            tools='React Js / styled-components / bootstrab / react-router-dom'
             name='Phone Store'
             delay='.7s'
             picture={`${require('../../pics/phon-store.png')}`}

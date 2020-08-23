@@ -8,7 +8,7 @@ export default function Hexagonal(props) {
     
     useEffect(()=>{
         window.addEventListener('scroll',()=>{
-          if(window.scrollY > 240){  
+          if(window.scrollY > document.getElementById('hexagonal').offsetTop -120){  
            setScroll([...scroll,'rotate'])
            setFade([...fade,'fadeIn'])
     
@@ -17,7 +17,7 @@ export default function Hexagonal(props) {
       },[])
     return (
         <Grid item xs={12} sm={6} md={6} lg={3} >
-        <div className='hexagonal'>
+        <div className='hexagonal' id='hexagonal'>
     <span className={`about-icons ${scroll?scroll[0]:''}`}>{<i className={`fas fa-${props.icon} fa-3x`}></i>}</span>
         <h3 className={`${fade?fade[0]:''}`}>{props.title}</h3>
     <p className={`text-container ${fade?fade[0]:''}`}>{props.text}</p>

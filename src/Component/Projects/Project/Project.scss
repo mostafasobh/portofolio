@@ -56,7 +56,7 @@
 
 .upAnimation{
     animation: moveUp .5s ease-in ;
-    animation-fill-mode: both;
+    animation-fill-mode: forwards;
 }
 
 

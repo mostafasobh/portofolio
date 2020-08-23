@@ -16,7 +16,6 @@ nav{
 label.logo{
     color: white;
     font-size: 35px;
-    line-height: 80px;
     padding: 0 100px;
     font-weight: bold;
 }
@@ -26,30 +25,31 @@ nav ul{
 }
 nav ul li{
     display: inline-block;
-    line-height: 80px;
+    padding-top: 20px;
     margin: 0 5px;
 }
 nav ul li a{
     text-decoration: none;
     color: rgb(255, 255, 255);
-    font-size: 90%;
+    font-size: 100%;
     text-transform: uppercase;
     padding: 7px 13px;
     border-radius: 3px;
+
 }
-nav ul li a:hover{
+nav ul li a:not([href]):not([tabindex]):hover,nav ul li a:not([href]):not([tabindex]):active{
+    cursor: pointer;
     text-decoration: none;
     color: rgb(0, 0, 0);
-}
-a.active,a:hover{
-    background-color: #1b9bff;
+    background-color: #e6e366;
     transition: .5s;
 }
+
 
 .checkbtn{
     font-size: 30px;
     float: right;
-    line-height: 80px;
+    
     margin-right: 40px;
     cursor: pointer;
     display: none;
@@ -85,7 +85,7 @@ a.active,a:hover{
     nav ul li{
         display: block;
         margin: 50px 0;
-        line-height: 30px;
+        
     }
     nav ul li a{
         font-size: 20px;
@@ -96,7 +96,7 @@ a.active,a:hover{
     }
     #check:checked ~ ul{
         left:0;
-        margin-top: 8px;
+        margin-top: -27px;
         
     }
     nav ul li a:active{

@@ -1,7 +1,7 @@
 .footer{
     width: 100%;
     background-color: #151657;
-    clip-path: polygon(51% 50%, 100% 16%, 100% 100%, 0 99%, 0 12%);
+    clip-path: polygon(51% 50%, 100% 16%, 100% 100%, 0 100%, 0 12%);
     text-align: center;
     color: white;
     padding-top: 120px;
@@ -16,6 +16,7 @@
     color: #0eddbb;
     opacity: 1;
 }
+
 .underscoreNoDelay{
     display: inline-block;
     background-color: rgb(82, 80, 80);
@@ -26,4 +27,10 @@
 }
 .social-button-container{
     padding-bottom: 20px;
+}
+
+@media (max-width: 400px){
+    .footer{
+        clip-path:polygon(51% 50%, 100% 35%, 100% 100%, 0 100%, 0 35%);
+    }
 }

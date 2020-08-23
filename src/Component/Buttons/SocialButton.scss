@@ -14,4 +14,38 @@
     color: rgb(15, 6, 6);
     background-color: rgba(187, 175, 64, 0.925);
     border: 1px solid rgba(192, 177, 47, 0.925);
+    & i{
+        animation: flib .5s ease-out;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes flib{
+    10%{
+        transform: translateY(-10px);
+        opacity: 1;
+    }
+
+    50%{
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    80%{
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY();
+        opacity: 1;
+    }
 }

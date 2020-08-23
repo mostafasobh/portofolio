@@ -6,6 +6,7 @@ import Projects from './Component/Projects/Projects'
 import Footer from './Component/Footer/Footer'
 
 export default function App() {
+
     return (
         <>
  <Navbar />

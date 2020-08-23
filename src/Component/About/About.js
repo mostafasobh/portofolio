@@ -12,11 +12,12 @@ export default function About() {
   const [scroll,setScroll] = useState([])
   const [animate,setAnimate] = useState([])
   useEffect(()=>{
+    
     window.addEventListener('scroll',()=>{
-      if(window.scrollY > 63){  
+      if(window.scrollY > document.getElementById('about').offsetTop - 120){  
        setScroll([...scroll,'mrnAnimation'])
       }
-      if(window.scrollY > 400){  
+      if(window.scrollY > document.getElementById('hexagonal').offsetTop){  
        setAnimate(['mrnAnimation','mlnAnimation'])
       }
 
